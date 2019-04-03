@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+kubectl delete -f alertmanager
+kubectl delete -f kube-state-metrics
+kubectl delete -f prometheus
+kubectl delete -f grafana
+kubectl delete -f node-exporter
