@@ -23,7 +23,7 @@ spec:
       annotations:
         scheduler.alpha.kubernetes.io/critical-pod: ''
     spec:
-      priorityClassName: system-node-critical
+      #priorityClassName: system-node-critical
       containers:
         - name: prometheus-node-exporter
           image: "prom/node-exporter:v0.16.0"
@@ -44,11 +44,11 @@ spec:
               readOnly: true
           resources:
             limits:
-              cpu: 10m
-              memory: 250Mi
+              cpu: 5m
+              memory: 200Mi
             requests:
-              cpu: 10m
-              memory: 150Mi
+              cpu: 5m
+              memory: 100Mi
       hostNetwork: true
       hostPID: true
       volumes:
