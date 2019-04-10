@@ -44,7 +44,7 @@ data:
         entity_display_name: '{{ .CommonLabels.alertname }}'
         state_message: 'Alert: {{ .CommonLabels.alertname }}. Summary:{{ .CommonAnnotations.summary }}. RawData: {{ .CommonLabels }}'
       slack_configs:
-      - channel: 'dbz-infra-alerts'
+      - channel: ''
         send_resolved: true
 
 
